@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>basic_data_types</title>
+</head>
+<body>
+    
+<script>
+// <!-- Arrays -->
+
+var dogs = ["pitbull","bulldog","sausagedog"];
+var i = 0;
+for(i=0;i<=2;i++){
+    console.log(dogs[i]);
+}
+// <!-- --------------------------------------------- -->
+// <!-- Objects -->
+
+var person = { 
+    name       :'Adam',
+    age        : 25,
+    place      :'outdoors',
+    enviroment :'nature'
+};
+console.log('My name is ' +person.name+ ', I am '+person.age+ ' years old. I am a '+person.place+ ' person. I love '+person.enviroment )
+// <!-- ----------------------------------------------------------- -->
+// <!-- Strings -->
+
+var a = 'a';
+var b = 'b';
+if (a < b) { // true
+  console.log(a + ' is less than ' + b);
+} else if (a > b) {
+  console.log(a + ' is greater than ' + b);
+} else {
+  console.log(a + ' and ' + b + ' are equal.');
+}
+// <!-- -------------------------------------------------------- -->
+// <!-- Numbers -->
+var x = 5;
+var y = 7;
+console.log(x+=y)
+// <!-- --------------------------------------------------------- -->
+// <!-- Boolean -->
+var YES = true;
+		var NO = false;
+		if(YES)
+		{
+			alert("This code block will be executed");
+		}
+		if(NO)
+		{
+			alert("This code block will not be executed");
+        }
+// <!-- ---------------------------------------------------------- -->
+// <!-- Null -->
+function getVowels(str) {
+  var m = str.match(/[aeiou]/gi);
+  if (m === null) {
+    return 0;
+  }
+  return m.length;
+}
+
+console.log(getVowels('sky'));
+// <!-- ---------------------------------------------------------------- -->
+// <!-- Undefined -->
+var y;
+
+if (typeof y !== "undefined") {
+    txt = "y is undefined";
+} else {
+    txt = "y is defined";
+}
+console.log(txt)
+// <!-- --------------------------------------------------------------- -->
+// <!-- Date -->
+function formatDate(date) {
+  var monthNames = [
+    "January", "February", "March",
+    "April", "May", "June", "July",
+    "August", "September", "October",
+    "November", "December"
+  ];
+
+  var day = date.getDate();
+  var monthIndex = date.getMonth();
+  var year = date.getFullYear();
+
+  return day + ' ' + monthNames[monthIndex] + ' ' + year;
+}
+
+console.log(formatDate(new Date()));
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
