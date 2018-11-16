@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>rainbow_1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+        <style>
+            .color{
+                text-align: center;
+                font-size: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+             </style>
+            </head>
+            <body>
+
+                <div class="container">
+                    <div id="box1" class="color">red</div>
+                    <div id="box2" class="color">orange</div>
+                    <div id="box3" class="color">yellow</div>
+                    <div id="box4" class="color">green</div>
+                    <div id="box5" class="color">blue</div>
+                    <div id="box6" class="color">indigo</div>
+                    <div id="box7" class="color">violet</div>
+                </div>
+                
+            <script>
+                    "use strict";
+                var rainbow =["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+                var box=["box1", "box2", "box3", "box4", "box5", "box6", "box7"]
+                
+                document.getElementById(box[0]).onclick = function() {myFunction0(box)};
+            function myFunction0(box) {
+                document.getElementById(box[0]).style.backgroundColor = rainbow[0];
+            }
+            // red--------------------------------
+            document.getElementById(box[1]).onclick = function() {myFunction1(box)};
+            function myFunction1(box) {
+                document.getElementById(box[1]).style.backgroundColor = rainbow[1];
+            }
+            // orange-------------------------------------
+            document.getElementById(box[2]).onclick = function() {myFunction2(box)};
+            function myFunction2(box) {
+                document.getElementById(box[2]).style.backgroundColor = rainbow[2];
+            }
+            // yellow-------------------------------
+            document.getElementById(box[3]).onclick = function() {myFunction3(box)};
+            function myFunction3(box) {
+                document.getElementById(box[3]).style.backgroundColor = rainbow[3];
+            }
+            // green---------------------------------
+            document.getElementById(box[4]).onclick = function() {myFunction4(box)};
+            function myFunction4(box) {
+                document.getElementById(box[4]).style.backgroundColor = rainbow[4];
+            }
+            // blue---------------------------------------------
+            document.getElementById(box[5]).onclick = function() {myFunction5(box)};
+            function myFunction5(box) {
+                document.getElementById(box[5]).style.backgroundColor = rainbow[5];
+            }
+            // indigo--------------------------------------------------
+            document.getElementById(box[6]).onclick = function() {myFunction6(box)};
+            function myFunction6(box) {
+                document.getElementById(box[6]).style.backgroundColor = rainbow[6];
+            }
+            // violet------------------------------------------------
+               
+            </script>
+    
+</body>
+</html>
